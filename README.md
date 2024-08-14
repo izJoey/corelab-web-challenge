@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# To-Do List Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend part of the To-Do List application, built with React + TypeScript + Vite. It provides a responsive and visually appealing interface for users to create, manage, and organize their to-do lists.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> [!IMPORTANT]  
+> Make sure you have Node.js and npm installed on your machine before proceeding.
 
-## Expanding the ESLint configuration
+To run the project locally, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- **Node.js**: version 18+ or 20+. 
+- **npm**: ^8.5.5
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+> [!TIP]
+> You can check if Node.js and npm are installed by running `node -v` and `npm -v` in your terminal.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone the repository:**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  ```
+  
+  git clone -b core-notes https://github.com/izJoey/corelab-web-challenge.git
+  
+  ```
+2. **Navigate to the project directory:**
+  ```
+
+  cd corelab-web-challenge
+
+  ```
+3. **Install the dependencies:**
+  ```
+
+  npm install
+
+  ```
+> [!NOTE]
+> The npm install command will install all necessary dependencies listed in the package.json file.
+
+
+
+### Running the Application
+
+  ```
+
+  npm run dev
+
+  ```
+
+Open your browser and navigate to:
+
+  ```
+
+  http://localhost:5173/
+
+  ```
+
+> [!CAUTION]
+> Avoid running the application on ports already in use. If port 5173 is occupied, you might need to specify a different port.
+
+#### Configuration:
+
+> [!NOTE]
+> There are no additional configurations needed for running the frontend locally. The application connects to the backend API at a predefined URL. Ensure the backend is running before interacting with the app.
+
+
+#### Features:
+
+- CRUD Operations: Add, edit, delete, and view to-do items.
+- Favorites: Mark to-do items as favorites to display them at the top.
+- Color Coding: Assign colors to items for better organization.
+- Responsive Design: Works well on both desktop and mobile devices.
