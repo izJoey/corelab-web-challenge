@@ -22,21 +22,15 @@ To run the project locally, follow these steps:
 1. **Clone the repository:**
 
   ```
-  
   git clone -b core-notes https://github.com/izJoey/corelab-web-challenge.git
-  
   ```
 2. **Navigate to the project directory:**
   ```
-
   cd corelab-web-challenge
-
   ```
 3. **Install the dependencies:**
   ```
-
   npm install
-
   ```
 > [!NOTE]
 > The npm install command will install all necessary dependencies listed in the package.json file.
@@ -46,17 +40,13 @@ To run the project locally, follow these steps:
 ### Running the Application
 
   ```
-
   npm run dev
-
   ```
 
 Open your browser and navigate to:
 
   ```
-
   http://localhost:5173/
-
   ```
 
 > [!CAUTION]
