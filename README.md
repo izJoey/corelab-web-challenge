@@ -11,7 +11,7 @@ To run the project locally, follow these steps:
 
 ### Prerequisites
 
-- **Node.js**: version 18+ or 20+. 
+- **Node.js**: v18+ or v20+. 
 - **npm**: ^8.5.5
 
 > [!TIP]
