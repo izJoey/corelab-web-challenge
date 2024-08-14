@@ -1,4 +1,4 @@
-# To-Do List Frontend
+# CoreNotes Frontend
 
 This is the frontend part of the To-Do List application, built with React + TypeScript + Vite. It provides a responsive and visually appealing interface for users to create, manage, and organize their to-do lists.
 
